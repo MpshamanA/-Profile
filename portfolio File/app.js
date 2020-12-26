@@ -1,1 +1,3 @@
-//新規作成
+function buttonAction(){
+    alert("test");
+}

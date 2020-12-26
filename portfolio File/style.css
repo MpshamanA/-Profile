@@ -1,1 +1,33 @@
-/*新規作成*/
+.FirstContent{
+    position: relative;
+    overflow: hidden;
+}
+
+.FirstContent h1{
+    position: absolute;
+    color:white;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    font-size: 5vw;
+    font-family:'Courier New';
+}
+.FirstContent ul{
+    position: absolute;
+    list-style: none;
+    right: 7%;
+    font-size: 1.5vw;
+}
+.FirstContent li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.FirstContent img{
+    width: 100%;
+}
