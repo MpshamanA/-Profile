@@ -1,58 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Sho Iwasaki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../portfolio File/css/style.css">
+  <script type="text/javascript" src="app.js"></script>
+  <title>Sho Iwasaki</title>
 </head>
-<body>
-    <script type="text/javascript" src="app.js"></script>
-    <div class = "FirstContent">
+<header>
+    <nav>
       <ul>
-          <li><a href="#About Me">About Me</a></li>
-          <li><a href="#Skill">Skill</a></li>
-          <li>Contact</li>
-      </ul> 
-      <h1>Sho Iwasaki</h1>
-      <img src = "img/Sunrise.JPG" alt="朝日">
-    </div>
-    <div class = "About">
+        <li class="manu-item"><a href="#About Me">About Me</a></li>
+        <li class="manu-item"><a href="#Skill">Skill</a></li>
+        <li class="manu-item"><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+</header>
+
+<body>
+  <div class="FirstContent">
+    <h1>Sho Iwasaki</h1>
+    <img src="img/main.JPG" alt="景色" id="topimg">
+  </div>
+  <section class="First">
+    <div class="About">
       <h2 id="About Me">About Me</h2>
       <p>27歳でエンジニアに転向<br>
-         佐賀県から福岡県に移住<br>
-         趣味はプログラミング<br>
-         色んなことに挑戦しています
+        佐賀県から福岡県に移住<br>
+        趣味はプログラミング<br>
+        色んなことに挑戦しています
       </p>
-      <img src = "img/sho.jpg" alt = "しょう いわさき">
-      
+      <img src="img/sho.jpg" alt="しょう いわさき" id="sho">
     </div>
     <div class="Introduction">
-        <div class="IntroductionItem">
+      <div class="IntroductionItem">
         <img src="img/トマトのアイコン.jpeg">
         <h4>出身地 ： 佐賀</h4>
         <p>高卒後建設業界で工事現場で働いてました</p>
-        </div>
-        <div class="IntroductionItem">
+      </div>
+      <div class="IntroductionItem">
         <img src="img/デスクワーク.jpeg">
         <h4>27歳でIT業界に転職</h4>
         <p>現在DBエンジニア</p>
+      </div>
     </div>
-    </div>
+  </section>
+  <section class="second">
+    <h2 id="Skill">Skill</h2>
     <div class="skill">
-        <h2 id ="Skill">Skill</h2>
-        <div class="skillItem">
-          <img src="img/SQL.png" alt="SQL">
+      <div class="skillItem">
+        <img src="img/SQL.png" alt="SQL">
         <h4>SQL</h4>
-        </div>
-        <div class="skillItem">
+        <p>基本設計、詳細設計、製造、単体テスト、内部結合試験を実務で経験してます。<br>
+          WHERE句で使う好きな演算子はLIKEです。
+        </p>
+      </div>
+      <div class="skillItem">
         <img src="img/swift.png" alt="SWIFT">
         <h4>SWIFT</h4>
-        </div>
-        <div class="skillItem">
+        <p>
+          UIKitを使いIT用語クイズアプリを作成中<br>
+          IT用語集という要素も追加し<br>
+          未経験者採用をした企業が最初の課題として使えるように開発する予定です。
+        </p>
+        <p></p>
+      </div>
+      <div class="skillItem">
         <img src="img/WEBページ.jpeg" alt="WEB">
         <h4>WEB</h4>
-        </div>
+        <p>
+          HTML5,CSS3,JavaScriptを使いこのページは作成しています。<br>
+          WordPressを使ってBlogサイトも公開中です。<br>
+          SEOについての理解はしているがまだまだ学習中です。
+        </p>
+      </div>
     </div>
+  </section>
+  <section class="third">
+    <div class="Contact">
+      <h2 id="Contact">Contact</h2>
+      <div class="submit-contents">
+        <h4>お仕事のご相談、ご質問は以下にお問い合わせください。</h4>
+        <form action="">
+          <dl>
+            <dt><input type="text" name="name" id="name" placeholder="お名前"></dt>
+            <dt><input type="email" name="mymail" id="mymail" placeholder="メールアドレス"></dt>
+            <dt><textarea class="form-control" name="message" cols="30" rows="6" placeholder="お問い合わせ内容"></textarea></dt>
+          </dl>
+          <input type="submit" value="送信">
+        </form>
+      </div>
+    </div>
+  </section>
 </body>
+<footer>
+  <p>Copyright © 2021 - Sho</p>
+</footer>
+
 </html>
