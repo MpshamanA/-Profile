@@ -13,12 +13,10 @@ window.addEventListener("scroll", function () {
     //topからの距離を取得
     let scroll = document.documentElement.scrollTop;
     //About Me要素-400の位置にきた時に発火
-    if (scroll > AboutRectY - 400) {
+    if(scroll > AboutRectY - 400) {
         document.querySelector(".About img").classList.add("shoIn");
-        sho.style.visibility = 'visible';
-    } else {
-        sho.style.visibility = 'hidden';
-        document.querySelector(".About img").classList.remove("shoIn");
+    } else{
+        //document.querySelector(".About img").classList.remove("shoIn");
         document.querySelector("header").classList.remove("headerColor");
     }
 
