@@ -1,0 +1,195 @@
+@import url(sanitize.css);
+
+header{
+    position: fixed;
+    /*display: flex;*/
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    align-items: center;
+    z-index: 100;
+}
+
+.headerColor{
+    background-color: white;
+}
+header nav{
+    text-align: right;
+    padding-right: 30px;
+}
+
+.manu-item{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    list-style: none;
+    display: inline-block;
+    font-size: 1.5vw;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+body{
+    font-family:Verdana, "ＭＳ Ｐゴシック", sans-serif;
+}
+
+body h2{
+font-size: 3vw;
+}
+
+.First{
+    padding: 0 10% 0;
+}
+.FirstContent{
+    position: relative;
+    overflow: hidden;
+}
+
+.FirstContent h1{
+    position: absolute;
+    color:white;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    font-size: 5vw;
+    font-family:'Courier New';
+}
+
+.FirstContent img{
+    width: 100%;
+    padding: 0;
+}
+.About{
+    position: relative;
+}
+
+.About p{
+    position: absolute;
+    padding-top: 5%;
+    top:10%;
+}
+@keyframes SlideIn {
+    0% {
+      opacity: 0;/*初期状態では透明に*/
+      transform: translateX(64px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes SlideOut {
+    0% {
+      opacity: 1;/*初期状態では透明に*/
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(64px);
+    }
+  }
+
+.About img{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(64px);
+}
+
+.About img.shoIn{
+    opacity: 1;
+    transform: none;
+}
+
+.shoOut{
+    animation: SlideOut 1.6s;
+}
+
+.About h4{
+    position: absolute;
+}
+
+.Introduction{
+   padding-top: 12%;
+}
+
+.IntroductionItem{
+    position: relative;
+}
+
+.IntroductionItem img{
+    float: left;
+    position: absolute;
+    top: 12.5%;
+}
+.IntroductionItem h4{
+    padding-left: 10%;
+}
+
+
+.IntroductionItem p{
+    padding-left: 10%;
+}
+
+.second{
+    padding: 0 10% 0;
+
+}
+
+.skill{
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.skill img{
+    width: 30%;
+    height: auto;
+}
+
+.skillItem{
+    float: left;
+    width: 30%;
+    padding-top: 3%;
+    margin: 0px 10px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: lightgray;
+    height: 370px;
+}
+
+.third{
+    padding: 0 10% 0;
+}
+.Contact{
+    clear: both;
+    padding-top: 10px;
+}
+
+.submit-contents{
+    text-align:center;
+}
+
+.submit-contents input{
+    margin: 10px;
+}
+.submit-contents textarea{
+    margin: 10px;
+    resize: none;
+}
+
+footer p{
+    text-align: right;
+    background-color: lightgray;
+    padding: 20px 10% 20px 0;
+    color: whitesmoke;
+}
