@@ -20,7 +20,7 @@ window.addEventListener("scroll", function () {
         document.querySelector("header").classList.remove("headerColor");
     }
 
-    if(scroll > topimgRectY - 100){
+    if(scroll > topimgRectY - 60){
         document.querySelector("header").classList.add("headerColor");
     }else{
         document.querySelector("header").classList.remove("headerColor");
