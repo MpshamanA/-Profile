@@ -1,5 +1,14 @@
 @import url(sanitize.css);
 
+a{
+    text-decoration: none;
+}
+
+section{
+    margin: 100px 0;
+    padding: 0 10% 0;
+}
+
 header{
     position: fixed;
     width: 100%;
@@ -58,16 +67,13 @@ header ul{
 }
 
 body{
-    font-family:Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    font-family:"Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
 }
 
 body h2{
-font-size: 3vw;
+font-size: 2vw;
 }
 
-.First{
-    padding: 0 10% 0;
-}
 .FirstContent{
     position: relative;
     overflow: hidden;
@@ -95,32 +101,28 @@ font-size: 3vw;
     position: relative;
 }
 
+.About h2{
+    opacity: 0;
+    transition: 1s;
+}
+
+.About h2.AboutH2Action{
+    opacity: 1;
+}
+
 .About p{
     position: absolute;
     padding-top: 5%;
     top:10%;
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(20px);
 }
-@keyframes SlideIn {
-    0% {
-      opacity: 0;/*初期状態では透明に*/
-      transform: translateX(64px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
 
-  @keyframes SlideOut {
-    0% {
-      opacity: 1;/*初期状態では透明に*/
-      transform: translateX(0);
-    }
-    100% {
-      opacity: 0;
-      transform: translateX(64px);
-    }
-  }
+.About p.AboutpAction{
+    opacity: 1;
+    transform: none;
+}
 
 .About img{
     width: 30%;
@@ -129,7 +131,7 @@ font-size: 3vw;
     top: 10%;
     right: 10%;
     opacity: 0;
-    transition: 1s;
+    transition: 1.5s;
     transform: translateX(64px);
 }
 
@@ -148,6 +150,12 @@ font-size: 3vw;
 
 .Introduction{
    padding-top: 12%;
+   opacity: 0;
+   transition: 1s;
+}
+
+.IntroductionAction{
+    opacity: 1;
 }
 
 .IntroductionItem{
@@ -166,6 +174,7 @@ font-size: 3vw;
 
 .IntroductionItem p{
     padding-left: 10%;
+    margin-bottom: 60px;
 }
 
 .Word{
@@ -183,11 +192,6 @@ font-size: 3vw;
     background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.6));
 }
 
-.second{
-    padding: 0 10% 0;
-
-}
-
 .skill{
     text-align: center;
     overflow: hidden;
@@ -203,16 +207,89 @@ font-size: 3vw;
     float: left;
     width: 30%;
     padding-top: 3%;
-    margin: 0px 10px;
+    margin: 0px 13px;
     border: 2px solid;
     border-radius: 10px;
     border-color: lightgray;
     height: 370px;
 }
 
-.third{
-    padding: 0 10% 0;
+.boderShadow{
+    transition: 1s;
+    box-shadow:5px 5px 10px;
 }
+
+.Deliverables{
+    background-image: url(../img/Deliverables.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+    background-size: cover;
+}
+.Deliverables h3{
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 100px;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.6));
+}
+
+.quizMov{
+    width: 325px;
+    height: 700px;
+    padding: 10px;
+    opacity: 0.8;
+}
+.quizMov:hover{
+    opacity: 1;
+    transition: .5s;
+    box-shadow: 0 .5rem .5rem .1rem;
+}
+
+.third h4{
+    text-align: center;
+    margin: 100px 0;
+    font-size: 30px;
+}
+
+.swift{
+    width: 325px;
+    border: 1px solid #6c757d;
+    border-radius :10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.swift p{
+    border-bottom: 1px solid #6c757d;
+}
+.Explanation{
+    text-align: left;
+    padding-left: 10px;
+    color: #6c757d;
+}
+
+.swift a{
+    font-family: Quicksand,sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 50px;
+    margin: 10px;
+    border: 2px solid #6c757d;
+    color: #6c757d;
+}
+.github{
+    text-align: center;
+}
+
+.swift a:hover{
+    transition: 1s;
+    background-color: honeydew;
+}
+
 .Contact{
     clear: both;
     padding-top: 10px;
