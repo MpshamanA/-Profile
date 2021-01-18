@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../portfolio File/css/style.css">
-  <script type="text/javascript" src="app.js"></script>
   <title>Sho Iwasaki</title>
 </head>
 <header>
@@ -52,32 +51,17 @@
   </div>
   <section class="second">
     <h2 id="Skill">Skill</h2>
-    <div class="skill">
-      <div class="skillItem">
-        <img src="img/SQL.png" alt="SQL">
-        <h4>SQL</h4>
-        <p>基本設計、詳細設計、製造、単体テスト、内部結合試験を実務で経験してます。<br>
-          WHERE句で使う好きな演算子はLIKEです。
-        </p>
-      </div>
-      <div class="skillItem">
-        <img src="img/swift.png" alt="SWIFT">
-        <h4>SWIFT</h4>
-        <p>
-          UIKitを使いIT用語クイズアプリを作成中<br>
-          IT用語集という要素も追加し<br>
-          未経験者採用をした企業が最初の課題として使えるように開発する予定です。
-        </p>
-        <p></p>
-      </div>
-      <div class="skillItem">
-        <img src="img/WEBページ.jpeg" alt="WEB">
-        <h4>WEB</h4>
-        <p>
-          HTML5,CSS3,JavaScriptを使いこのページは作成しています。<br>
-          WordPressを使ってBlogサイトも公開中です。<br>
-          SEOについての理解はしてますがまだまだ学習中です。
-        </p>
+    <!-- javascriptで取得 -->
+    <!-- <div id="skill" class="skill">
+    </div> -->
+    <!-- Vueで取得 -->
+    <div id="skill" class="skill">
+      <div class="skillItem" id="skillItem" v-for="Photo in Photos">
+        <img :src="Photo.path">
+        <div class="skill-type">
+          <h4>{{Photo.skill}}</h4>
+          <p>{{Photo.caption}}</p>
+        </div>
       </div>
     </div>
   </section>
@@ -115,6 +99,8 @@
       </div>
     </div>
   </section>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 <footer>
   <p>Copyright © 2021 - Sho Iwasaki</p>
