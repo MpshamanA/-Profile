@@ -1,11 +1,11 @@
-
-let images = [
+//import { images } from "./image";
+ let images = [
     {
         "path": "img/SQL.png",
         "skill": "SQL",
         "caption": "基本設計、詳細設計、製造、単体テスト、内部結合試験を実務で経験してます。WHERE句で使う好きな演算子はLIKEです。"
     },
-    {
+    { 
         "path": "img/swift.png",
         "skill": "SWIFT",
         "caption": "UIKitを使いIT用語クイズアプリを作成中。IT用語集という要素も追加し未経験者採用をした企業が最初の課題として使えるように開発する予定です。"
