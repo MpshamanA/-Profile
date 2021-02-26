@@ -70,17 +70,20 @@
   </div>
   <section class="third">
     <h4>Portfolio</h4>
-    <div class="swift">
-      <video src="../portfolio File/img/ITQuiz.mp4" loop autoplay muted class="quizMov"></video>
-    </div>
-    <div class="swift">
-      <p>IT用語クイズ</p>
-      <p class="Explanation">ios app</p>
-      <p class="Explanation">IT用語クイズを作成中<br>
-        完成したら動画広告等収益化を考えています
-      </p>
-      <p class="Explanation">Xcode / Swift / UIKit</p>
-      <a href="https://github.com/MpshamanA/ITQuizProject/tree/main/testquestion/testquestion" class="github">GitHub</a>
+    <div class="skills" id="skills" v-for="skill in skillType">
+      <div class="swift">
+        <video src="../portfolio File/img/ITQuiz.mp4" loop autoplay muted class="quizMov"></video>
+      </div>
+      <div class="swift">
+        <p>{{skill.title}}</p>
+        <p class="Explanation">{{skill.type}}</p>
+        <p class="Explanation">
+          {{skill.Introduction}}
+        </p>
+        <p class="Explanation">{{skill.Technology}}</p>
+        <a href="https://github.com/MpshamanA/ITQuizProject/tree/main/testquestion/testquestion"
+          class="github">{{skill.btnName}}</a>
+      </div>
     </div>
   </section>
   <section class="fourth">

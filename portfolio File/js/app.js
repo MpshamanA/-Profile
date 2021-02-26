@@ -17,6 +17,27 @@
     }
 
 ];
+
+const skills = [
+    {
+        "path" : "../portfolio File/img/ITQuiz.mp4",
+        "title": "IT用語クイズ",
+        "type" :"ios app",
+        "Introduction" : "IT用語クイズを作成中完成したら動画広告等収益化を考えています",
+        "Technology" : "Xcode / Swift / UIKit",
+        "link" : "https://github.com/MpshamanA/ITQuizProject/tree/main/testquestion/testquestion",
+        "btnName" : "GitHub"
+    }/* ,
+    {
+        "path" : "../portfolio File/img/ITQuiz.mp4",
+        "title": "TEST",
+        "type" :"hoge",
+        "Introduction" : "hogehogehogehogehogehogehogehoge",
+        "Technology" : "TEST",
+        "link" : "https://github.com/MpshamanA/ITQuizProject/tree/main/testquestion/testquestion",
+        "btnName" : "TEST"
+    } */
+];
 //Vueで取得
 let app = new Vue({
     el:'#skill',
@@ -25,6 +46,16 @@ let app = new Vue({
     },
     created: function(){
         this.Photos = images;
+    }
+});
+
+let vm = new Vue({
+    el:"#skills",
+    data:{
+        skillType:[]
+    },
+    created: function(){
+        this.skillType = skills;
     }
 });
 
